@@ -3,6 +3,7 @@
   <img class="banner-image" src="banner image.png" alt="Banner Image">
   <div class="centered"> Marcus' Trip to Japan </div>
 </header> 
+<div class="padded">
 <nav>
   <table style="margin-bottom: 10px;">
     <tr>
@@ -50,11 +51,13 @@
     </tr>
   </table>
 </nav>
+</div>
 <div class="content">
 	<p class="description">This travel log will be updated daily in the evening (Japanese Standard Time)</p>
 	<ul>
 		<li>Scroll to see more dates</li>
 		<li>Click the date to see that day</li>
+		<li>Click an image to enlarge it and click again to return it to the original size</li>
 		<li>Last Updated: <code>1:24 a.m. Monday, September 30, 2024 JST</code>   (<code>12:29 p.m. Sunday, September 29, 2024 EST</code>)</li>
 		<li><button onclick="window.location='/Updates.html'">Updated At History</button></li>
 		<!-- https://www.google.com/search?client=firefox-b-d&q=time+in+jst -->
@@ -64,6 +67,15 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
 <style>
+
+  .padded {
+      max-width: 77vw;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+  }
 
 .content {
   max-width: 80vw;
