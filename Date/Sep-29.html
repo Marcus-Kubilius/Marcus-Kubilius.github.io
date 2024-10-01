@@ -62,7 +62,8 @@
         <div  class="content_table">
                 <table>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P1_1.jpg" alt="Me Shopping">
+                        <input type="checkbox" class="btnControl" id="P1_1"/><label for="P1_1">
+                        <img class="content_image" src="P1_1.jpg" alt="Me Shopping"></label>
                     </td>
                 </table>
         </div>
@@ -79,22 +80,28 @@
         <div  class="content_table">
                 <table>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P2_1.jpg" alt="Asian Festival">
+                        <input type="checkbox" class="btnControl" id="P2_1"/><label for="P2_1">
+                        <img class="content_image" src="P2_1.jpg" alt="Asian Festival"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P2_2.jpg" alt="Asian Festival">
+                        <input type="checkbox" class="btnControl" id="P2_2"/><label for="P2_2">
+                        <img class="content_image" src="P2_2.jpg" alt="Asian Festival"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P2_5.jpg" alt="Asian Festival">
+                        <input type="checkbox" class="btnControl" id="P2_5"/><label for="P2_5">
+                        <img class="content_image" src="P2_5.jpg" alt="Asian Festival"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P2_12.jpg" alt="Asian Festival">
+                        <input type="checkbox" class="btnControl" id="P2_12"/><label for="P2_12">
+                        <img class="content_image" src="P2_12.jpg" alt="Asian Festival"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P2_8.jpg" alt="Asian Festival">
+                        <input type="checkbox" class="btnControl" id="P2_8"/><label for="P2_8">
+                        <img class="content_image" src="P2_8.jpg" alt="Asian Festival"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P2_10.jpg" alt="Asian Festival">
+                        <input type="checkbox" class="btnControl" id="P2_10"/><label for="P2_10">
+                        <img class="content_image" src="P2_10.jpg" alt="Asian Festival"></label>
                     </td>
                 </table>
         </div>
@@ -110,25 +117,32 @@
         <div  class="content_table">
                 <table>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_1.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_1"/><label for="P3_1">
+                        <img class="content_image" src="P3_1.jpg" alt="Food"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_2.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_2"/><label for="P3_2">
+                        <img class="content_image" src="P3_2.jpg" alt="Food"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_3.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_3"/><label for="P3_3">
+                        <img class="content_image" src="P3_3.jpg" alt="Food"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_4.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_4"/><label for="P3_4">
+                        <img class="content_image" src="P3_4.jpg" alt="Food"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_5.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_5"/><label for="P3_5">
+                        <img class="content_image" src="P3_5.jpg" alt="Food"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_6.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_6"/><label for="P3_6">
+                        <img class="content_image" src="P3_6.jpg" alt="Food"></label>
                     </td>
                     <td>
-                        <img class="content_image" src="/Date/Sep 29/P3_7.jpg" alt="Food">
+                        <input type="checkbox" class="btnControl" id="P3_7"/><label for="P3_7">
+                        <img class="content_image" src="P3_7.jpg" alt="Food"></label>
                     </td>
                 </table>
         </div>
@@ -138,6 +152,28 @@
    
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
    <style>
+
+    .btnControl {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+
+    .btnControl:checked + label > img {
+        position: fixed;
+        z-index:1000;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+
+        height: auto;
+        max-height: 95vh;
+        max-width: 95vw;
+    }
 
     .padded {
         max-width: 77vw;
