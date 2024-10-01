@@ -280,7 +280,7 @@
    ::-webkit-scrollbar-thumb {
      border-radius: 100px;
      background: #8070d4;
-     border: 6px solid rgba(0, 0, 0, 0.2);
+     border: 6px solid rgba(0, 0, 0, 1);
    }
    
    html {
@@ -290,7 +290,13 @@
    }
 
     button {
-    font-size: 17px;
+    font-size: 15px;
+    }
+
+    @media (max-width: 1000px) {
+    button {
+        font-size: 25px;
+    }
     }
    
    </style>
